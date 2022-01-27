@@ -1,7 +1,9 @@
+// @dart = 2.9;
 import 'package:flutter/material.dart';
-import 'package:arcore_flutter_plugin_example/app.dart';
+import 'package:furniture_store_app/screens/app.dart';
 import 'package:arcore_flutter_plugin/arcore_flutter_plugin.dart'
     show ArCoreController;
+
 
 void main() async
 {
@@ -14,8 +16,6 @@ void main() async
   print(await ArCoreController.checkIsArCoreInstalled());
 
   runApp(
-      App(),
+      MyApp(),
   );
 }
-
-
